@@ -1,0 +1,45 @@
+<div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
+  <base-card>
+    <base-card-title>
+      <h5 class="mdl-card__title-text text-color--white">Course</h5>
+    </base-card-title>
+    <base-card-body>
+      <form class="form form--basic" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone form__article">
+            <h3 class="text-color--smooth-gray">BASIC INFORMATION ABOUT COURSE</h3>
+            <div class="mdl-textfield mdl-js-textfield full-size">
+              <input class="mdl-textfield__input" ngModel #CourseTitle="ngModel"  type="text" name="CourseTitle">
+              <label class="mdl-textfield__label" for="first-name">Course Title</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield full-size">
+              <input class="mdl-textfield__input" ngModel #CourseDescription="ngModel" type="text" name="CourseDescription">
+              <label class="mdl-textfield__label" for="last-name">Description</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield full-size"></div>
+            <div class="mdl-textfield mdl-js-textfield full-size">
+                <div class="mdl-layout-spacer"></div>
+            <button class="mdl-button mdl-js-button mdl-button--raised color--light-blue"  value="Save">Save</button>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone form__article">
+            <h3 class="text-color--smooth-gray">Topic</h3>
+            <div class="mdl-textfield mdl-js-textfield full-size">
+              <input class="mdl-textfield__input" ngModel type="text" #TopicTitle="ngModel" name="TopicTitle">
+              <label class="mdl-textfield__label" for="first-name">Topic Title</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield full-size">
+              <input class="mdl-textfield__input" ngModel #TopicDescription="ngModel" type="text" name="TopicDescription">
+              <label class="mdl-textfield__label" for="last-name">Topic Description</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield full-size">
+              <label >Select file</label>  <br>
+              <input class="" type="file" ngModel  #TopicAttachment="ngModel" name="TopicAttachment">
+             
+            </div>
+          </div>
+        </div>
+      </form>
+    </base-card-body>
+  </base-card>
+</div>
